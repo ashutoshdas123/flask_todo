@@ -1,0 +1,12 @@
+<!doctype html>
+<html>
+<head><title>Show Todos</title></head>
+<body>
+  <h1>All Todos</h1>
+  <ul>
+    {% for todo in todos %}
+      <li>{{ todo.title }}: {{ todo.desc }}</li>
+    {% endfor %}
+  </ul>
+</body>
+</html>
